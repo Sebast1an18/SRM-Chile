@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="es" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="SRM · Creo páginas web a medida para proyectos, emprendimientos y trabajos, del diseño al servidor.">
+<meta name="theme-color" content="#07050d">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<link rel="icon" type="image/svg+xml" href="img/icon-dark.svg">
+<title>SRM · Diseño web a medida</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+<canvas id="stars"></canvas>
+<div class="nebula"></div>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#inicio">
+      <img class="icon-light" src="img/icon-light.svg" alt="SRM">
+      <img class="icon-dark" src="img/icon-dark.svg" alt="SRM">
+      <span>SRM</span>
+    </a>
+    <ul>
+      <li class="l-item"><a class="l" href="#quien">Quién soy</a></li>
+      <li class="l-item"><a class="l" href="#servicios">Servicios</a></li>
+      <li class="l-item"><a class="l" href="#trabajos">Trabajos</a></li>
+      <li class="l-item"><a class="l" href="#contacto">Contacto</a></li>
+      <li><button class="toggle" id="themeBtn" aria-label="Cambiar tema">☾</button></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+  <section class="hero" id="inicio">
+    <div class="wrap">
+      <img class="logo-big logo-light" src="img/logo-light.svg" alt="Logo SRM">
+      <img class="logo-big logo-dark" src="img/logo-dark.svg" alt="Logo SRM">
+      <p class="eyebrow">Bienvenido</p>
+      <h1>Páginas web <em>hechas a tu medida</em></h1>
+      <p class="lead">Creo sitios web para los proyectos, negocios y trabajos de otras personas. Elegantes, claros y pensados para que tu idea se vea tan bien como se imagina.</p>
+
+      <form class="welcome-box" id="nameForm">
+        <input id="nameInput" type="text" placeholder="¿Cómo te llamas?" autocomplete="given-name" maxlength="40">
+        <button class="btn" type="submit">Entrar</button>
+      </form>
+
+      <div class="greeting" id="greeting">
+        <p class="hi">Hola, <b id="userName"></b> ✦ qué gusto tenerte aquí.</p>
+        <p class="lead" style="margin:10px auto 0">Mira lo que he creado y cuéntame qué proyecto tienes en mente.</p>
+        <div class="row">
+          <a class="btn" href="#trabajos">Ver mis trabajos</a>
+          <a class="btn ghost" href="#contacto">Hablemos</a>
+          <button class="btn ghost" id="changeName" type="button">No soy yo</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="quien">
+    <div class="wrap">
+      <div class="sec-title reveal"><h2>Quién soy</h2><div class="divider"></div></div>
+      <div class="about reveal">
+        <div>
+          <p>Soy <strong>creador de páginas web</strong>. Trabajo mano a mano con personas que tienen un proyecto, un emprendimiento o un trabajo que quieren mostrar al mundo.</p>
+          <p>Soy <strong>Técnico de Nivel Medio en Programación</strong>, con título oficial, y llevo esa formación a cada proyecto real que construyo.</p>
+          <p>Me dedico al desarrollo <strong>de punta a punta: desde el backend hasta el frontend</strong>. Es decir, hago tanto lo que tus usuarios ven como lo que funciona detrás.</p>
+          <p>Me encargo de todo: <strong>desde la idea hasta la página funcionando</strong>. Tú me cuentas lo que necesitas y yo lo convierto en un sitio con identidad propia.</p>
+          <p>Cada proyecto es único, así que cada diseño también lo es.</p>
+        </div>
+        <div class="card-glass" style="text-align:center">
+          <img class="icon-sm icon-light" src="img/icon-light.svg" alt="" style="margin:0 auto 18px">
+          <img class="icon-sm icon-dark" src="img/icon-dark.svg" alt="" style="margin:0 auto 18px">
+          <p class="serif" style="font-size:1.6rem;color:var(--text);line-height:1.4">“Tu proyecto merece una página que hable por ti.”</p>
+        </div>
+      </div>
+      <div class="ends reveal">
+        <div class="end">
+          <span class="tag">Frontend</span>
+          <h3>Lo que se ve</h3>
+          <p>Es la parte que las personas ven y tocan: el diseño, los colores, los botones, los formularios y cómo se adapta al celular. Es la “cara” de tu página.</p>
+          <small>Ejemplo: el panel con gráficos, el modo oscuro y las capturas que ves en esta página.</small>
+        </div>
+        <div class="plus" aria-hidden="true">+</div>
+        <div class="end">
+          <span class="tag">Backend</span>
+          <h3>Lo que pasa detrás</h3>
+          <p>Es lo que no se ve pero hace que todo funcione: guardar los datos, validar quién entra, hacer los cálculos, generar PDF y proteger la información.</p>
+          <small>Ejemplo: aprobar un documento, descontar el stock o generar un certificado firmado.</small>
+        </div>
+      </div>
+      <p class="ends-note reveal">Hacer las dos partes significa <strong>un solo responsable, menos coordinación y un sistema que encaja de principio a fin</strong>.</p>
+
+    </div>
+  </section>
+
+  <section id="servicios">
+    <div class="wrap">
+      <div class="sec-title reveal"><h2>Qué hago</h2><div class="divider"></div></div>
+      <div class="services">
+        <div class="service reveal"><div class="n">01</div><h3>Webs para proyectos</h3><p>Páginas para dar a conocer tu idea, emprendimiento o negocio.</p></div>
+        <div class="service reveal"><div class="n">02</div><h3>Portafolios y trabajos</h3><p>Muestra tu trabajo de forma ordenada, profesional y atractiva.</p></div>
+        <div class="service reveal"><div class="n">03</div><h3>Diseño a medida</h3><p>Colores, estilo y estructura según tu identidad. Nada de plantillas genéricas.</p></div>
+        <div class="service reveal"><div class="n">04</div><h3>Listas para móvil</h3><p>Se ven bien en celular, tablet y computador.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="trabajos">
+    <div class="wrap">
+      <div class="sec-title reveal"><h2>Páginas que he creado</h2><div class="divider"></div></div>
+      <article class="feat reveal" data-key="portal" data-desc='["Acceso con pestañas para contratistas y funcionarios", "Barra de progreso, estado de la empresa y categoría", "Los 12 documentos requeridos, subidos desde un solo lugar", "Pasos que se desbloquean al completar el anterior", "Vigente, vencido y pendiente de firma", "Validación de contratistas y documentos", "Cada documento se aprueba o rechaza con un clic", "Firma dibujada o subida, con fondo transparente automático", "Jefatura de Licitaciones: evaluación y montos", "Montos configurables por categoría"]'>
+  <div class="feat-head" role="button" tabindex="0" aria-expanded="false"><div>
+    <span class="badge">Proyecto destacado</span>
+    <h3>Portal de Contratistas<small>Plataforma de gestión para un municipio</small></h3>
+  </div><span class="more"><em>Ver proyecto</em><span class="chev" aria-hidden="true">⌄</span></span></div>
+  <div class="feat-body"><div class="feat-inner">
+  <p class="intro">Plataforma web que digitaliza el registro, la validación y la certificación de empresas contratistas de un municipio. Reemplaza un trámite con papeles y revisiones manuales por un flujo en línea, con cada paso registrado.</p>
+  <div class="viewer" tabindex="0" aria-label="Capturas del proyecto: usa las flechas para cambiar">
+    <div class="bar"><i></i><i></i><i></i><span class="vTitle"></span></div>
+    <div class="stage"><button class="arrow prev" type="button" aria-label="Captura anterior">‹</button><img class="vImg" alt=""><button class="arrow next" type="button" aria-label="Captura siguiente">›</button><span class="counter vCount"></span></div>
+  </div>
+  <p class="cap-line"><b class="vName"></b> · <span class="vDesc"></span></p>
+  <div class="thumbs"><button class="thumb on" data-n="0" aria-label="Inicio de sesión" type="button"><img src="img/portal-01.jpg" alt="Inicio de sesión"></button><button class="thumb" data-n="1" aria-label="Panel del contratista" type="button"><img src="img/portal-02.jpg" alt="Panel del contratista"></button><button class="thumb" data-n="2" aria-label="Mis documentos" type="button"><img src="img/portal-03.jpg" alt="Mis documentos"></button><button class="thumb" data-n="3" aria-label="Proceso de pagos" type="button"><img src="img/portal-04.jpg" alt="Proceso de pagos"></button><button class="thumb" data-n="4" aria-label="Historial de certificados" type="button"><img src="img/portal-05.jpg" alt="Historial de certificados"></button><button class="thumb" data-n="5" aria-label="Panel SECPLAN" type="button"><img src="img/portal-06.jpg" alt="Panel SECPLAN"></button><button class="thumb" data-n="6" aria-label="Validar documentos" type="button"><img src="img/portal-07.jpg" alt="Validar documentos"></button><button class="thumb" data-n="7" aria-label="Firma y timbre" type="button"><img src="img/portal-08.jpg" alt="Firma y timbre"></button><button class="thumb" data-n="8" aria-label="Resumen ejecutivo" type="button"><img src="img/portal-09.jpg" alt="Resumen ejecutivo"></button><button class="thumb" data-n="9" aria-label="Tipos y precios de pago" type="button"><img src="img/portal-10.jpg" alt="Tipos y precios de pago"></button></div>
+  <div class="feat-cols"><div><h4>Qué resuelve</h4><ul><li>La empresa se registra y sube sus <b>12 documentos</b> requeridos desde un solo lugar.</li><li>SECPLAN valida cada documento y aprueba los pagos con un flujo claro.</li><li>El <b>certificado de vigencia en PDF</b> sale con firma y timbre institucional, sin trámites presenciales.</li><li>La Jefatura de Licitaciones evalúa y compara empresas con datos concretos.</li><li>Todo movimiento queda en una <b>auditoría</b> que se puede filtrar.</li></ul></div><div><h4>5 perfiles de usuario</h4><ul><li><b>Contratista:</b> sube documentos, solicita pagos y descarga certificados.</li><li><b>SECPLAN:</b> valida documentos, aprueba comprobantes y consulta el ranking.</li><li><b>Jefatura de Licitaciones:</b> registra y evalúa licitaciones, compara empresas.</li><li><b>Directora (firmante):</b> revisa y firma certificados con firma y timbre.</li><li><b>Superadmin:</b> gestiona usuarios, precios, documentos y auditoría.</li></ul></div><div><h4>Funciones principales</h4><ul><li><b>Flujo guiado:</b> documentos, validación, pago, firma y certificado.</li><li>Barra de progreso y estados claros: pendiente, validado, rechazado.</li><li>Certificados vigente, pendiente de firma o vencido, con filtros.</li><li>Categorías (1° a 4°) con <b>precios configurables</b>.</li><li>Ranking y comparador de contratistas con evaluación por estrellas.</li><li>Modo claro y oscuro, diseño responsivo y seguridad reforzada.</li></ul></div></div>
+  <div class="chips"><span class="chip">PHP</span><span class="chip">MariaDB</span><span class="chip">Apache</span><span class="chip">dompdf</span><span class="chip">HTTPS</span><span class="chip">Protección CSRF</span><span class="chip">Bloqueo tras 5 intentos</span></div>
+</div></div>
+</article>
+<article class="feat reveal" data-key="eco" data-desc='["Panel del superadmin con accesos rápidos", "Stock por producto, tipo y subcategoría", "Productos próximos a vencer y retiros guiados", "Código de barras que autocompleta los campos", "Distribución e ingresos vs salidas, con detalle al hacer clic", "Datos agregados de la población atendida", "El mismo panel con tema oscuro", "Gráficos interactivos también en tema oscuro"]'>
+  <div class="feat-head" role="button" tabindex="0" aria-expanded="false"><div>
+    <span class="badge">Proyecto destacado · En despliegue</span>
+    <h3>Eco Mercado<small>Sistema de banco de alimentos para un municipio</small></h3>
+  </div><span class="more"><em>Ver proyecto</em><span class="chev" aria-hidden="true">⌄</span></span></div>
+  <div class="feat-body"><div class="feat-inner">
+  <p class="intro">Plataforma web para gestionar un banco de alimentos municipal. Controla el inventario, arma y aprueba solicitudes de canastas, programa las entregas mensuales y deja respaldo de cada movimiento.</p>
+  <div class="viewer" tabindex="0" aria-label="Capturas del proyecto: usa las flechas para cambiar">
+    <div class="bar"><i></i><i></i><i></i><span class="vTitle"></span></div>
+    <div class="stage"><button class="arrow prev" type="button" aria-label="Captura anterior">‹</button><img class="vImg" alt=""><button class="arrow next" type="button" aria-label="Captura siguiente">›</button><span class="counter vCount"></span></div>
+  </div>
+  <p class="cap-line"><b class="vName"></b> · <span class="vDesc"></span></p>
+  <div class="thumbs"><button class="thumb on" data-n="0" aria-label="Inicio" type="button"><img src="img/eco-01.jpg" alt="Inicio"></button><button class="thumb" data-n="1" aria-label="Inventario" type="button"><img src="img/eco-02.jpg" alt="Inventario"></button><button class="thumb" data-n="2" aria-label="Alertas de vencimiento" type="button"><img src="img/eco-03.jpg" alt="Alertas de vencimiento"></button><button class="thumb" data-n="3" aria-label="Ingreso con escáner" type="button"><img src="img/eco-04.jpg" alt="Ingreso con escáner"></button><button class="thumb" data-n="4" aria-label="Gráficos de alimentos" type="button"><img src="img/eco-05.jpg" alt="Gráficos de alimentos"></button><button class="thumb" data-n="5" aria-label="Gráficos de beneficiarios" type="button"><img src="img/eco-06.jpg" alt="Gráficos de beneficiarios"></button><button class="thumb" data-n="6" aria-label="Modo oscuro" type="button"><img src="img/eco-07.jpg" alt="Modo oscuro"></button><button class="thumb" data-n="7" aria-label="Gráficos en modo oscuro" type="button"><img src="img/eco-08.jpg" alt="Gráficos en modo oscuro"></button></div>
+  <div class="feat-cols"><div><h4>Qué resuelve</h4><ul><li>Sabe en todo momento <b>cuántas canastas</b> alcanza a armar el stock.</li><li><b>Alerta los productos próximos a vencer</b> y facilita derivarlos a organizaciones o a compostaje antes de perderlos.</li><li>Programa las entregas por día hábil y corre automáticamente las que caen en fin de semana.</li><li>Reemplaza planillas por una <b>ficha social completa</b> de cada beneficiario.</li><li>Deja trazabilidad: quién aprobó, retiró o descargó qué, y cuándo.</li></ul></div><div><h4>5 perfiles de usuario</h4><ul><li><b>Superadmin:</b> usuarios, productos, canasta estándar, reportes, auditoría y respaldo.</li><li><b>Admin de beneficiarios:</b> registra beneficiarios, solicita canastas y consulta entregas.</li><li><b>Gestor de canastas:</b> aprueba o rechaza solicitudes, gestiona inventario y retiros.</li><li><b>Analista:</b> panel de solo lectura, gráficos y exportación de entregas.</li><li><b>Practicante / voluntario:</b> ingresa alimentos con permisos acotados.</li></ul></div><div><h4>Funciones principales</h4><ul><li><b>Inventario por lotes</b> con vencimiento y campaña, e ingreso con <b>escáner de código de barras</b>.</li><li>Retiros guiados: próximos a vencer hacia organizaciones, vencidos hacia residuos.</li><li><b>Canasta estándar</b> configurable y cálculo de canastas posibles.</li><li>Solicitudes con aprobación y motivo obligatorio al rechazar.</li><li><b>Gráficos interactivos</b> con detalle al hacer clic, y exportación a PDF, Excel y ZIP.</li><li>Auditoría que la aplicación no puede modificar y respaldo de la base de datos.</li></ul></div></div>
+  <div class="chips"><span class="chip">PHP 8</span><span class="chip">MariaDB</span><span class="chip">PDO</span><span class="chip">FPDF</span><span class="chip">PhpSpreadsheet</span><span class="chip">Control de acceso por rol</span><span class="chip">54/54 pruebas de seguridad</span><span class="chip">Pensado para la Ley 21.719</span></div>
+</div></div>
+</article>
+<div class="lb" id="lb"><button class="arrow prev" id="lbPrev" aria-label="Anterior" type="button">‹</button><img id="lbImg" alt=""><button class="arrow next" id="lbNext" aria-label="Siguiente" type="button">›</button></div>
+<p class="more-t reveal">Más trabajos</p>
+<div class="grid" id="grid"></div>
+      <p class="hint">✦ Haz clic en un proyecto para abrirlo; al abrir otro, el anterior se cierra.</p>
+    </div>
+  </section>
+
+  <section id="contacto">
+    <div class="wrap">
+      <div class="cta reveal">
+        <h2>¿Tienes un proyecto en mente?</h2>
+        <p>Cuéntame tu idea y la convertimos en una página web que te represente.</p>
+        <button class="btn" id="ctaOpen" type="button" aria-haspopup="dialog">Quiero mi página</button>
+      </div>
+    </div>
+  </section>
+</main>
+<div class="cm" id="cm" role="dialog" aria-modal="true" aria-labelledby="cmT" hidden>
+  <div class="cm-box">
+    <button class="cm-x" id="cmX" type="button" aria-label="Cerrar">✕</button>
+    <h3 class="serif" id="cmT">¿Cómo prefieres contactarme?</h3>
+    <p>Elige el medio que te quede más cómodo.</p>
+    <div class="cm-list">
+      <a class="cm-it" href="mailto:matiasmatua3@gmail.com?subject=Cotizaci%C3%B3n%20p%C3%A1gina%20web">
+        <span class="cm-ic" style="background:#fff"><svg viewBox="0 0 32 32" width="30" height="30"><path fill="#4285F4" d="M4 8.500 16 17.500v-6L8 6.300z" opacity="0"/><path fill="#EA4335" d="M4 9.300v13.200c0 .8.700 1.500 1.500 1.500H9V13.400L4 9.300z" opacity="0"/><path fill="#4285F4" d="M5.500 25H9V13.200l-5-3.800v14.100c0 .8.700 1.500 1.500 1.500z"/><path fill="#34A853" d="M23 25h3.500c.8 0 1.500-.7 1.500-1.500V9.400l-5 3.800V25z"/><path fill="#FBBC04" d="M23 8.500v4.700l5-3.800V7.700c0-1.900-2.200-3-3.700-1.800L23 8.500z"/><path fill="#EA4335" d="M9 13.200V8.500l7 5.300 7-5.300v4.700l-7 5.300-7-5.300z"/><path fill="#C5221F" d="M4 7.700v1.700l5 3.800V8.500L7.700 5.900C6.200 4.700 4 5.800 4 7.700z"/></svg></span>
+        <span class="cm-tx"><b>Gmail</b><small>matiasmatua3@gmail.com</small></span><span class="cm-ar">→</span>
+      </a>
+      <a class="cm-it" href="https://instagram.com/srmwebchile" target="_blank" rel="noopener">
+        <span class="cm-ic" style="background:linear-gradient(45deg,#feda75,#fa7e1e 25%,#d62976 50%,#962fbf 75%,#4f5bd5)"><svg viewBox="0 0 32 32" width="28" height="28" fill="none" stroke="#fff" stroke-width="2.400"><rect x="5" y="5" width="22" height="22" rx="6.500"/><circle cx="16" cy="16" r="5.200"/><circle cx="22.800" cy="9.200" r="1.300" fill="#fff" stroke="none"/></svg></span>
+        <span class="cm-tx"><b>Instagram</b><small>@srmwebchile · escríbeme por DM</small></span><span class="cm-ar">→</span>
+      </a>
+    </div>
+  </div>
+</div>
+
+
+<footer>
+  <img class="icon-light" src="img/icon-light.svg" alt="">
+  <img class="icon-dark" src="img/icon-dark.svg" alt="">
+  <p>© <span id="year"></span> SRM · Diseño y desarrollo web</p>
+</footer>
+
+<script src="js/app.js"></script>
+</body>
+</html>
