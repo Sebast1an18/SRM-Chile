@@ -118,3 +118,4 @@ size();addEventListener('resize',size);
   cm.addEventListener('click',e=>{if(e.target===cm)hide()});
   document.addEventListener('keydown',e=>{if(!cm.hidden&&e.key==='Escape')hide()});
 })();
+
