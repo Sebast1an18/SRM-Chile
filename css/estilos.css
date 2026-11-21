@@ -34,6 +34,23 @@ header{position:sticky;top:0;z-index:20;backdrop-filter:blur(14px);background:co
 .toggle{border:1px solid var(--line);background:var(--surface);color:var(--text);width:40px;height:40px;border-radius:50%;cursor:pointer;font-size:1.05rem;transition:.3s}
 .toggle:hover{border-color:var(--accent);transform:rotate(15deg)}
 @media(max-width:720px){.nav ul .l-item{display:none}}
+/* menú hamburguesa (solo móvil) */
+.burger-li,.mnav{display:none}
+.burger{width:42px;height:42px;border-radius:10px;border:1px solid var(--line);background:transparent;cursor:pointer;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;padding:0;-webkit-tap-highlight-color:transparent}
+.burger span{display:block;width:20px;height:2px;border-radius:2px;background:var(--text);transition:transform .25s,opacity .2s}
+header.open .burger span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+header.open .burger span:nth-child(2){opacity:0}
+header.open .burger span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+@media(max-width:720px){
+  .burger-li{display:block}
+  .nav ul{gap:12px}
+  .mnav{position:absolute;left:0;right:0;top:100%;flex-direction:column;padding:6px 22px 14px;background:var(--bg);border-bottom:1px solid var(--line);box-shadow:0 14px 30px rgba(0,0,0,.35)}
+  header.open .mnav{display:flex}
+  .mnav a{padding:15px 4px;color:var(--text);text-decoration:none;font-size:.95rem;letter-spacing:.1em;text-transform:uppercase;border-bottom:1px solid var(--line)}
+  .mnav a:last-child{border-bottom:0}
+  .mnav a:active{color:var(--accent)}
+}
+
 
 /* logos swap */
 .logo-dark,.icon-dark{display:none}
