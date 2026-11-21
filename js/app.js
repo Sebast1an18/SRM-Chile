@@ -118,3 +118,6 @@ size();addEventListener('resize',size);
   cm.addEventListener('click',e=>{if(e.target===cm)hide()});
   document.addEventListener('keydown',e=>{if(!cm.hidden&&e.key==='Escape')hide()});
 })();
+
+// Gmail: en computador abre el redactor de Gmail en el navegador; en celular usa mailto (abre la app de correo)
+(function(){const a=document.getElementById('cmGmail');if(a&&/Android|iPhone|iPad|iPod/i.test(navigator.userAgent)){a.href=a.dataset.mailto;a.removeAttribute('target')}})();
