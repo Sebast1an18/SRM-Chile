@@ -119,3 +119,15 @@ size();addEventListener('resize',size);
   document.addEventListener('keydown',e=>{if(!cm.hidden&&e.key==='Escape')hide()});
 })();
 
+
+// Menú hamburguesa (móvil)
+(function(){
+  const h=document.querySelector('header'),b=document.getElementById('burger'),m=document.getElementById('mnav');
+  if(!h||!b||!m)return;
+  function set(on){h.classList.toggle('open',on);b.setAttribute('aria-expanded',on?'true':'false');b.setAttribute('aria-label',on?'Cerrar menú':'Abrir menú')}
+  b.addEventListener('click',e=>{e.stopPropagation();set(!h.classList.contains('open'))});
+  m.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>set(false)));
+  document.addEventListener('click',e=>{if(!h.contains(e.target))set(false)});
+  document.addEventListener('keydown',e=>{if(e.key==='Escape')set(false)});
+  window.addEventListener('resize',()=>{if(window.innerWidth>720)set(false)});
+})();
