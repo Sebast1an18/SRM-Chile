@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tu Barbería | Landing de ejemplo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Oswald:wght@500;600;700&display=swap">
+<style>
+:root{--accent:#C8A24A;--bg:#14120F;--bg2:#1A1713;--card:#221E18;--line:#3A3429;--text:#F3EEE4;--muted:#CFC6B4}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font-family:'Inter',system-ui,sans-serif}
+a{text-decoration:none;color:inherit}
+.wrap{max-width:1100px;margin:0 auto;padding:0 24px}
+header{display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:space-between;padding:20px 0}
+.logo{font-family:'Oswald',sans-serif;font-weight:700;font-size:26px;letter-spacing:3px;text-transform:uppercase;color:var(--accent)}
+nav{display:flex;flex-wrap:wrap;gap:24px;align-items:center;font-size:15px;color:var(--muted)}
+nav a:hover{color:var(--text)}
+.btn{display:inline-block;background:var(--accent);color:#14120F;font-weight:600;padding:14px 26px;border-radius:4px}
+.btn.ghost{background:none;border:1px solid #5C5445;color:var(--text);font-weight:500}
+.eyebrow{font-size:13px;letter-spacing:3px;text-transform:uppercase;color:var(--accent);font-weight:600}
+h1,h2,h3{font-family:'Oswald',sans-serif;text-transform:uppercase;margin:0}
+.hero{display:flex;flex-wrap:wrap;gap:40px;align-items:center;padding:56px 0 80px}
+.hero .txt{flex:1 1 420px;display:flex;flex-direction:column;gap:22px}
+.hero h1{font-size:clamp(40px,7vw,66px);line-height:1.05;font-weight:700}
+.hero p{margin:0;font-size:18px;line-height:1.6;color:var(--muted);max-width:500px}
+.hero .ph{flex:1 1 340px;height:380px;border:1px solid var(--line);border-radius:8px;background:repeating-linear-gradient(135deg,#1E1B16,#1E1B16 18px,#25211B 18px,#25211B 36px);display:flex;align-items:center;justify-content:center;color:#B8AE9C;font-size:14px;letter-spacing:1px}
+.actions{display:flex;flex-wrap:wrap;gap:14px}
+section.alt{background:var(--bg2)}
+section{padding:72px 0}
+section h2{font-size:clamp(30px,5vw,42px);font-weight:600;margin:10px 0 36px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:22px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:28px 24px;display:flex;flex-direction:column;gap:10px}
+.card h3{font-size:22px;font-weight:600}
+.card p{margin:0;color:var(--muted);line-height:1.55;font-size:15px}
+.btn.small{padding:10px 18px;font-size:14px;align-self:flex-start;margin-top:8px}
+.price{margin-top:auto;padding-top:14px;font-size:22px;font-weight:600;color:var(--accent)}
+.num{font-family:'Oswald',sans-serif;font-weight:700;font-size:52px;color:var(--accent);line-height:1}
+.step{display:flex;flex-direction:column;gap:10px}
+.step b{font-size:19px}
+.step span{color:var(--muted);line-height:1.55;font-size:15px}
+.two{display:flex;flex-wrap:wrap;gap:40px}
+.two>div{flex:1 1 320px}
+.row{display:flex;justify-content:space-between;gap:16px;padding:14px 0;border-bottom:1px solid var(--line)}
+.row span:last-child{color:var(--muted)}
+.cta{text-align:center;padding:90px 0}
+.cta h2{font-size:clamp(32px,6vw,50px);margin:0 0 16px}
+.cta p{color:var(--muted);font-size:18px;margin:0 0 28px}
+footer{border-top:1px solid var(--line);padding:26px 0;color:#B8AE9C;font-size:14px}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
+.note{background:#2A2418;border-bottom:1px solid var(--line);color:var(--muted);font-size:13px;text-align:center;padding:10px 16px}
+</style>
+</head>
+<body>
+<div class="note">Landing de ejemplo: toca "Reservar" en cualquier servicio y se abre WhatsApp con el mensaje listo.</div>
+<div class="wrap">
+  <header>
+    <div class="logo">Tu Barbería</div>
+    <nav>
+      <a href="#servicios">Servicios</a>
+      <a href="#reservar">Cómo reservar</a>
+      <a href="#horarios">Horarios</a>
+      <a class="btn" href="https://wa.me/56900000000?text=Hola%2C%20vi%20sus%20cortes%20y%20me%20interesar%C3%ADa%20agendar%20uno.%20%C2%BFPara%20qu%C3%A9%20fecha%20tienen%20disponible%3F">Reservar hora</a>
+    </nav>
+  </header>
+  <div class="hero">
+    <div class="txt">
+      <div class="eyebrow">Corte · Barba · Estilo</div>
+      <h1>Corte clásico, atención de primera</h1>
+      <p>Reserva tu hora por WhatsApp en menos de un minuto. Sin filas, sin esperas, con el barbero que prefieras.</p>
+      <div class="actions">
+        <a class="btn" href="https://wa.me/56900000000?text=Hola%2C%20vi%20sus%20cortes%20y%20me%20interesar%C3%ADa%20agendar%20uno.%20%C2%BFPara%20qu%C3%A9%20fecha%20tienen%20disponible%3F">Reservar por WhatsApp</a>
+        <a class="btn ghost" href="#servicios">Ver servicios</a>
+      </div>
+    </div>
+    <div class="ph">[Foto de tu local o de un corte]</div>
+  </div>
+</div>
+
+<section id="servicios" class="alt"><div class="wrap">
+  <div class="eyebrow">Servicios</div>
+  <h2>Lo que hacemos</h2>
+  <div class="grid">
+    <div class="card"><h3>Corte clásico</h3><p>Corte a tijera o máquina, lavado y peinado final.</p><div class="price">[PRECIO]</div><a class="btn small" href="https://wa.me/56900000000?text=Hola%2C%20vi%20sus%20cortes%20y%20me%20interesa%20el%20servicio%3A%20Corte%20cl%C3%A1sico.%20%C2%BFPara%20qu%C3%A9%20fecha%20tienen%20disponible%3F">Reservar</a></div>
+    <div class="card"><h3>Barba y perfilado</h3><p>Perfilado con navaja, toalla caliente y aceite.</p><div class="price">[PRECIO]</div><a class="btn small" href="https://wa.me/56900000000?text=Hola%2C%20vi%20sus%20cortes%20y%20me%20interesa%20el%20servicio%3A%20Barba%20y%20perfilado.%20%C2%BFPara%20qu%C3%A9%20fecha%20tienen%20disponible%3F">Reservar</a></div>
+    <div class="card"><h3>Corte + barba</h3><p>El combo completo en una sola visita.</p><div class="price">[PRECIO]</div><a class="btn small" href="https://wa.me/56900000000?text=Hola%2C%20vi%20sus%20cortes%20y%20me%20interesa%20el%20servicio%3A%20Corte%20%2B%20barba.%20%C2%BFPara%20qu%C3%A9%20fecha%20tienen%20disponible%3F">Reservar</a></div>
+    <div class="card"><h3>Corte infantil</h3><p>Para los más chicos, con paciencia y buen humor.</p><div class="price">[PRECIO]</div><a class="btn small" href="https://wa.me/56900000000?text=Hola%2C%20vi%20sus%20cortes%20y%20me%20interesa%20el%20servicio%3A%20Corte%20infantil.%20%C2%BFPara%20qu%C3%A9%20fecha%20tienen%20disponible%3F">Reservar</a></div>
+  </div>
+</div></section>
+
+<section id="reservar"><div class="wrap">
+  <div class="eyebrow">Reservas</div>
+  <h2>Reserva en tres pasos</h2>
+  <div class="grid">
+    <div class="step"><div class="num">01</div><b>Escríbenos por WhatsApp</b><span>Toca el botón y se abre el chat con el mensaje listo.</span></div>
+    <div class="step"><div class="num">02</div><b>Elige servicio y horario</b><span>Te confirmamos la hora disponible más cercana.</span></div>
+    <div class="step"><div class="num">03</div><b>Llega y relájate</b><span>Tu barbero te espera a la hora acordada.</span></div>
+  </div>
+</div></section>
+
+<section id="horarios" class="alt"><div class="wrap two">
+  <div>
+    <h2 style="margin-top:0">Horarios</h2>
+    <div class="row"><span>Lunes a viernes</span><span>[HORA] – [HORA]</span></div>
+    <div class="row"><span>Sábado</span><span>[HORA] – [HORA]</span></div>
+    <div class="row"><span>Domingo</span><span>[HORA] – [HORA]</span></div>
+  </div>
+  <div>
+    <h2 style="margin-top:0">Dónde estamos</h2>
+    <p style="color:var(--muted);line-height:1.7;font-size:17px;margin:0">[DIRECCIÓN, COMUNA]<br>[REFERENCIA]</p>
+  </div>
+</div></section>
+
+<div class="cta wrap">
+  <h2>¿Listo para tu próximo corte?</h2>
+  <p>Escríbenos y te respondemos en minutos.</p>
+  <a class="btn" href="https://wa.me/56900000000?text=Hola%2C%20vi%20sus%20cortes%20y%20me%20interesar%C3%ADa%20agendar%20uno.%20%C2%BFPara%20qu%C3%A9%20fecha%20tienen%20disponible%3F">Reservar por WhatsApp</a>
+</div>
+
+<footer><div class="wrap"><span>© Tu Barbería. Todos los derechos reservados.</span><span>Instagram: @[tu_usuario]</span></div></footer>
+</body>
+</html>
