@@ -17,7 +17,10 @@ document.getElementById('changeName').onclick=()=>{try{localStorage.removeItem('
 // ---- portafolio (reemplaza nombres y tipos) ----
 const CUMPLE_IMG='img/cumple-demo.jpg';
 const works=[
- ['Regalo de cumpleaños interactivo','Página web personalizada',{img:CUMPLE_IMG,href:'demo/feliz-cumple-demo.html',txt:'Libro de fotos con páginas que se voltean, sobre con sello de cera y carta animada. Versión de demostración con fotos y textos censurados.'}]
+ ['Regalo de cumpleaños interactivo','Página web personalizada',{img:CUMPLE_IMG,href:'demo/feliz-cumple-demo.html',txt:'Libro de fotos con páginas que se voltean, sobre con sello de cera y carta animada. Versión de demostración con fotos y textos censurados.'}],
+ ['Landing para barbería','Página de ejemplo',{img:'img/landing-barberia.jpg',href:'demo/landing-barberia.html',txt:'Servicios, cómo reservar, horarios y ubicación, con botón de reserva por WhatsApp en cada servicio. Ejemplo con textos de relleno.'}],
+ ['Landing para cafetería','Página de ejemplo',{img:'img/landing-cafeteria.jpg',href:'demo/landing-cafeteria.html',txt:'Carta de cafés y comidas, horarios y ubicación, con pedidos por WhatsApp. Ejemplo con textos de relleno.'}],
+ ['Landing para taller mecánico','Página de ejemplo',{img:'img/landing-taller.jpg',href:'demo/landing-taller.html',txt:'Servicios, cómo funciona la cotización, horarios y ubicación, con cotización por WhatsApp. Ejemplo con textos de relleno.'}]
 ];
 const grid=document.getElementById('grid');
 works.forEach(([t,k,d],i)=>{

@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tu Taller | Landing de ejemplo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Inter:wght@400;500;600&display=swap">
+<style>:root{--bg:#101418;--bg2:#161C22;--card:#1C242C;--line:#2E3944;--text:#EEF2F5;--muted:#B5C0CA;--accent:#F26B21;--onaccent:#111;--head:"Barlow Condensed",sans-serif;--tt:uppercase;--r:6px;--ph1:#161C22;--ph2:#1B232B}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font-family:'Inter',system-ui,sans-serif}
+a{text-decoration:none;color:inherit}
+.wrap{max-width:1100px;margin:0 auto;padding:0 24px}
+header{display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:space-between;padding:20px 0}
+.logo{font-family:var(--head);font-weight:700;font-size:26px;letter-spacing:2px;text-transform:uppercase;color:var(--accent)}
+nav{display:flex;flex-wrap:wrap;gap:24px;align-items:center;font-size:15px;color:var(--muted)}
+nav a:hover{color:var(--text)}
+.btn{display:inline-block;background:var(--accent);color:var(--onaccent);font-weight:600;padding:14px 26px;border-radius:var(--r)}
+.btn.ghost{background:none;border:1px solid var(--line);color:var(--text);font-weight:500}
+.btn.small{padding:10px 18px;font-size:14px;align-self:flex-start;margin-top:8px}
+.eyebrow{font-size:13px;letter-spacing:3px;text-transform:uppercase;color:var(--accent);font-weight:600}
+h1,h2,h3{font-family:var(--head);margin:0;text-transform:var(--tt)}
+.hero{display:flex;flex-wrap:wrap;gap:40px;align-items:center;padding:56px 0 80px}
+.hero .txt{flex:1 1 420px;display:flex;flex-direction:column;gap:22px}
+.hero h1{font-size:clamp(40px,7vw,64px);line-height:1.05;font-weight:700}
+.hero p{margin:0;font-size:18px;line-height:1.6;color:var(--muted);max-width:500px}
+.hero .ph{flex:1 1 340px;height:380px;border:1px solid var(--line);border-radius:var(--r);background:repeating-linear-gradient(135deg,var(--ph1),var(--ph1) 18px,var(--ph2) 18px,var(--ph2) 36px);display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:14px;letter-spacing:1px;text-align:center;padding:12px}
+.actions{display:flex;flex-wrap:wrap;gap:14px}
+section.alt{background:var(--bg2)}
+section{padding:72px 0}
+section h2{font-size:clamp(30px,5vw,42px);font-weight:600;margin:10px 0 36px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:22px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:28px 24px;display:flex;flex-direction:column;gap:10px}
+.card h3{font-size:22px;font-weight:600}
+.card p{margin:0;color:var(--muted);line-height:1.55;font-size:15px}
+.price{margin-top:auto;padding-top:14px;font-size:20px;font-weight:600;color:var(--accent)}
+.num{font-family:var(--head);font-weight:700;font-size:52px;color:var(--accent);line-height:1}
+.step{display:flex;flex-direction:column;gap:10px}
+.step b{font-size:19px}.step span{color:var(--muted);line-height:1.55;font-size:15px}
+.two{display:flex;flex-wrap:wrap;gap:40px}.two>div{flex:1 1 320px}
+.row{display:flex;justify-content:space-between;gap:16px;padding:14px 0;border-bottom:1px solid var(--line)}
+.row span:last-child{color:var(--muted)}
+.item{display:flex;justify-content:space-between;gap:16px;padding:12px 0;border-bottom:1px dashed var(--line)}
+.item small{display:block;color:var(--muted);font-size:13px;margin-top:2px}
+.item .p{color:var(--accent);font-weight:600;white-space:nowrap}
+.cta{text-align:center;padding:90px 0}
+.cta h2{font-size:clamp(32px,6vw,48px);margin:0 0 16px}
+.cta p{color:var(--muted);font-size:18px;margin:0 0 28px}
+footer{border-top:1px solid var(--line);padding:26px 0;color:var(--muted);font-size:14px}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
+.note{background:var(--bg2);border-bottom:1px solid var(--line);color:var(--muted);font-size:13px;text-align:center;padding:10px 16px}
+</style></head><body>
+<div class="note">Landing de ejemplo para un taller mecánico: toca "Cotizar" y se abre WhatsApp con el mensaje listo.</div>
+<div class="wrap">
+<header><div class="logo">Tu Taller</div>
+<nav><a href="#servicios">Servicios</a><a href="#como">Cómo funciona</a><a href="#horarios">Horarios</a><a class="btn" href="https://wa.me/56900000000?text=Hola%2C%20necesito%20una%20cotizaci%C3%B3n%20para%20mi%20auto.%20%C2%BFCu%C3%A1ndo%20pueden%20revisarlo%3F">Cotizar por WhatsApp</a></nav></header>
+<div class="hero"><div class="txt"><div class="eyebrow">Mecánica general · Diagnóstico</div>
+<h1>Tu auto, en buenas manos</h1>
+<p>Escríbenos con la patente y lo que le pasa a tu auto. Te respondemos con una cotización antes de tocar nada.</p>
+<div class="actions"><a class="btn" href="https://wa.me/56900000000?text=Hola%2C%20necesito%20una%20cotizaci%C3%B3n%20para%20mi%20auto.%20%C2%BFCu%C3%A1ndo%20pueden%20revisarlo%3F">Cotizar por WhatsApp</a><a class="btn ghost" href="#servicios">Ver servicios</a></div></div>
+<div class="ph">[Foto de tu taller o de tu equipo trabajando]</div></div></div>
+<section id="servicios" class="alt"><div class="wrap"><div class="eyebrow">Servicios</div><h2>Lo que hacemos</h2><div class="grid">
+<div class="card"><h3>Mantención y cambio de aceite</h3><p>Cambio de aceite y filtros, y revisión de niveles.</p><div class="price">[PRECIO]</div><a class="btn small" href="https://wa.me/56900000000?text=Hola%2C%20necesito%20cotizar%20este%20servicio%20para%20mi%20auto%3A%20Mantenci%C3%B3n%20y%20cambio%20de%20aceite.%20%C2%BFCu%C3%A1ndo%20pueden%20revisarlo%3F">Cotizar</a></div>
+<div class="card"><h3>Frenos</h3><p>Revisión y cambio de pastillas, discos y líquido de frenos.</p><div class="price">[PRECIO]</div><a class="btn small" href="https://wa.me/56900000000?text=Hola%2C%20necesito%20cotizar%20este%20servicio%20para%20mi%20auto%3A%20Frenos.%20%C2%BFCu%C3%A1ndo%20pueden%20revisarlo%3F">Cotizar</a></div>
+<div class="card"><h3>Suspensión y dirección</h3><p>Amortiguadores, rótulas, alineación y balanceo.</p><div class="price">[PRECIO]</div><a class="btn small" href="https://wa.me/56900000000?text=Hola%2C%20necesito%20cotizar%20este%20servicio%20para%20mi%20auto%3A%20Suspensi%C3%B3n%20y%20direcci%C3%B3n.%20%C2%BFCu%C3%A1ndo%20pueden%20revisarlo%3F">Cotizar</a></div>
+<div class="card"><h3>Diagnóstico computarizado</h3><p>Lectura de fallas con scanner, para saber qué tiene tu auto.</p><div class="price">[PRECIO]</div><a class="btn small" href="https://wa.me/56900000000?text=Hola%2C%20necesito%20cotizar%20este%20servicio%20para%20mi%20auto%3A%20Diagn%C3%B3stico%20computarizado.%20%C2%BFCu%C3%A1ndo%20pueden%20revisarlo%3F">Cotizar</a></div>
+</div></div></section>
+<section id="como"><div class="wrap"><div class="eyebrow">Cómo funciona</div><h2>Simple y sin sorpresas</h2><div class="grid">
+<div class="step"><div class="num">01</div><b>Cuéntanos qué le pasa</b><span>Escríbenos por WhatsApp con la patente, el modelo y el problema.</span></div>
+<div class="step"><div class="num">02</div><b>Recibe tu cotización</b><span>Te decimos qué necesita y cuánto cuesta antes de empezar.</span></div>
+<div class="step"><div class="num">03</div><b>Retira tu auto</b><span>Te avisamos por WhatsApp cuando esté listo.</span></div></div></div></section>
+<section id="horarios" class="alt"><div class="wrap two"><div><h2 style="margin-top:0">Horarios</h2>
+<div class="row"><span>Lunes a viernes</span><span>[HORA] – [HORA]</span></div>
+<div class="row"><span>Sábado</span><span>[HORA] – [HORA]</span></div></div>
+<div><h2 style="margin-top:0">Dónde estamos</h2><p style="color:var(--muted);line-height:1.7;font-size:17px;margin:0">[DIRECCIÓN, COMUNA]<br>[REFERENCIA]</p></div></div></section>
+<div class="cta wrap"><h2>¿Tu auto necesita revisión?</h2><p>Escríbenos y te respondemos con una cotización.</p><a class="btn" href="https://wa.me/56900000000?text=Hola%2C%20necesito%20una%20cotizaci%C3%B3n%20para%20mi%20auto.%20%C2%BFCu%C3%A1ndo%20pueden%20revisarlo%3F">Cotizar por WhatsApp</a></div>
+<footer><div class="wrap"><span>© Tu Taller. Todos los derechos reservados.</span><span>Instagram: @[tu_usuario]</span></div></footer>
+</body></html>
